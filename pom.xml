@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.mwk</groupId>
-    <artifactId>twitch-spring-microservice</artifactId>
+    <artifactId>twitch-ms</artifactId>
     <version>1.0-RELEASE</version>
     <name>twitch-spring-microservice</name>
     <description>Demo project for Spring Boot</description>
