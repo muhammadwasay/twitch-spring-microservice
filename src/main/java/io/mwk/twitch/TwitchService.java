@@ -17,7 +17,7 @@ public class TwitchService {
     @Autowired
     private WebClient webClient;
 
-    @Value("${clientId}")
+    @Value("${TWITCH_CLIENT_ID}")
     private String clientId;
 
     Logger logger = LoggerFactory.getLogger(TwitchService.class);

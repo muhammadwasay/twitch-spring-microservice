@@ -11,10 +11,10 @@ import org.springframework.security.oauth2.core.AuthorizationGrantType;
 
 @Configuration
 public class OAuth2Config {
-    @Value("${clientId}")
+    @Value("${TWITCH_CLIENT_ID}")
     private String clientId;
 
-    @Value("${clientSecret}")
+    @Value("${TWITCH_CLIENT_SECRET}")
     private String clientSecret;
 
     @Bean
