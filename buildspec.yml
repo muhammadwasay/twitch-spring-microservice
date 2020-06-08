@@ -7,7 +7,7 @@ phases:
   pre_build:
     commands:
       - echo pre build started on `date`
-      - amazon-linux-extras enable docker
+      # - amazon-linux-extras enable docker
       - yum install amazon-ecr-credential-helper
       # - echo '{"credsStore": "ecr-login"}' | sudo tee -a ~/.docker/config.json
       # - cat ~/.docker/config.json
