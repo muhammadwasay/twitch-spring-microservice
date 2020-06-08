@@ -8,11 +8,12 @@ phases:
     commands:
       - echo pre build started on `date`
       # - amazon-linux-extras enable docker
-      - yum install amazon-ecr-credential-helper
+      - PYTHON=python2 amazon-linux-extras enable docker
+      # - yum install amazon-ecr-credential-helper
       # - echo '{"credsStore": "ecr-login"}' | sudo tee -a ~/.docker/config.json
-      # - cat ~/.docker/config.json
       # - echo \u0027\{\u0022credsStore\u0022: \u0022ecr-login\u0022\}\u0027 | sudo tee -a ~/.docker/config.json
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+      - cat /root/.docker/config.json
   build:
     commands:
       - echo Build started on `date`
