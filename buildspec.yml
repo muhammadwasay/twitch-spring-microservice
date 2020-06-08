@@ -11,7 +11,7 @@ phases:
       - sudo yum install amazon-ecr-credential-helper
       # - echo '{"credsStore": "ecr-login"}' | sudo tee -a ~/.docker/config.json
       # - cat ~/.docker/config.json
-      - echo \u0027\{\u0022credsStore\u0022: \u0022ecr-login\u0022\}\u0027 | sudo tee -a ~/.docker/config.json
+      # - echo \u0027\{\u0022credsStore\u0022: \u0022ecr-login\u0022\}\u0027 | sudo tee -a ~/.docker/config.json
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
   build:
     commands:
