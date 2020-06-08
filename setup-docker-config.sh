@@ -1,0 +1,1 @@
+echo '{"credsStore": "ecr-login"}' | tee -a ~/.docker/config.json
