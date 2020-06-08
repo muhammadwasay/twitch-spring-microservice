@@ -7,12 +7,13 @@ phases:
   pre_build:
     commands:
       - echo pre build started on `date`
-      - docker info
+      - cat ~/.docker/config.json
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+      - sudo amazon-linux-extras enable docker
+      - sudo yum install amazon-ecr-credential-helper
   build:
     commands:
       - echo Build started on `date`
-      - mvn clean install package
   post_build:
     commands:
       - echo Build completed on `date`
