@@ -73,7 +73,7 @@
                 <version>2.3.0</version>
                 <configuration>
                     <to>
-                        <image>481137230390.dkr.ecr.us-east-1.amazonaws.com/java-twitch-integration/twitch-microservice</image>
+                        <image>481137230390.dkr.ecr.us-east-1.amazonaws.com/java-twitch-integration</image>
                     </to>
                     <from>
                         <image>489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto11:latest</image>
