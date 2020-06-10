@@ -7,6 +7,7 @@ phases:
   pre_build:
     commands:
       - echo pre build started on `date`
+      - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
       - PYTHON=python2 amazon-linux-extras enable docker
       - yum -y install amazon-ecr-credential-helper
       - chmod u+x setup-docker-config.sh
