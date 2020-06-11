@@ -74,6 +74,9 @@
                 <configuration>
                     <to>
                         <image>481137230390.dkr.ecr.us-east-1.amazonaws.com/java-twitch-integration</image>
+                        <tags>
+                            <tag>${pom.version}</tag>
+                        </tags>
                     </to>
                     <from>
                         <image>489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto11:latest</image>
