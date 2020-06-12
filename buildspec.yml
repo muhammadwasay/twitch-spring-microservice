@@ -21,4 +21,4 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/twitch-ms-1.0-RELEASE.jar
+    - target/maven-archiver/pom.properties
